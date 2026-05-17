@@ -1,0 +1,59 @@
+header {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #97ef83;
+  padding: 24px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 4px solid #97ef83;
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: '🌀';
+  position: absolute;
+  font-size: 120px;
+  opacity: 0.04;
+  left: 20px;
+  top: -20px;
+  pointer-events: none;
+}
+
+header::after {
+  content: '🛸';
+  position: absolute;
+  font-size: 100px;
+  opacity: 0.05;
+  right: 20px;
+  bottom: -20px;
+  pointer-events: none;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #97ef83, #6ee7f7, #c084fc, #97ef83);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 4s ease infinite;
+}
+
+header h2 {
+  font-size: 0.95rem;
+  color: #9ca3af;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

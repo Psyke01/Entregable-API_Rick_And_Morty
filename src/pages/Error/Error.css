@@ -1,0 +1,47 @@
+.errorPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: radial-gradient(ellipse at 50% 50%, rgba(255, 107, 107, 0.07) 0%, #111827 60%);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.errorCode {
+  font-size: 8rem;
+  font-weight: 900;
+  color: #ff6b6b;
+  line-height: 1;
+  text-shadow: 0 0 30px rgba(255, 107, 107, 0.4);
+}
+
+.errorTitle {
+  font-size: 1.8rem;
+  color: #f9fafb;
+  margin: 12px 0 8px;
+}
+
+.errorDescription {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 32px;
+}
+
+.errorHomeLink {
+  text-decoration: none;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #97ef83, #6ee7f7);
+  color: #0d0d0d;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: all 0.2s;
+  box-shadow: 0 4px 20px rgba(151, 239, 131, 0.3);
+}
+
+.errorHomeLink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(151, 239, 131, 0.5);
+}

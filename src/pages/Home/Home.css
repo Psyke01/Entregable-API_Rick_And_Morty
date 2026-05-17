@@ -1,0 +1,143 @@
+.homePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 82vh;
+  background: radial-gradient(ellipse at 50% 0%, rgba(151, 239, 131, 0.08) 0%, #111827 60%);
+  padding: 40px 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.homePage::before,
+.homePage::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.07;
+}
+
+.homePage::before {
+  width: 400px;
+  height: 400px;
+  background: #97ef83;
+  top: -100px;
+  right: -100px;
+}
+
+.homePage::after {
+  width: 300px;
+  height: 300px;
+  background: #6ee7f7;
+  bottom: -80px;
+  left: -80px;
+}
+
+.homeContent {
+  text-align: center;
+  color: #fff;
+  max-width: 640px;
+  position: relative;
+  z-index: 1;
+}
+
+.homeBadge {
+  display: inline-block;
+  background: rgba(151, 239, 131, 0.12);
+  color: #97ef83;
+  border: 1px solid rgba(151, 239, 131, 0.3);
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.homeContent h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  text-shadow: 0 0 30px rgba(151, 239, 131, 0.2);
+}
+
+.homeContent h1 span {
+  color: #97ef83;
+}
+
+.homeContent p {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  margin-bottom: 36px;
+  line-height: 1.7;
+}
+
+.homeStats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.statNumber {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #97ef83;
+}
+
+.statLabel {
+  font-size: 13px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.homeButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.homeBtn {
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: all 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.homeBtn.primary {
+  background: linear-gradient(135deg, #97ef83, #6ee7f7);
+  color: #0d0d0d;
+  box-shadow: 0 4px 20px rgba(151, 239, 131, 0.35);
+}
+
+.homeBtn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(151, 239, 131, 0.5);
+}
+
+.homeBtn.secondary {
+  background: transparent;
+  color: #97ef83;
+  border: 2px solid #97ef83;
+}
+
+.homeBtn.secondary:hover {
+  background: rgba(151, 239, 131, 0.1);
+  transform: translateY(-2px);
+}

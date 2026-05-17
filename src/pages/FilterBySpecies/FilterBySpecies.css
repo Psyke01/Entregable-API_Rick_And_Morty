@@ -1,0 +1,19 @@
+.filterPage {
+  background-color: #111827;
+  min-height: 80vh;
+  padding-top: 30px;
+}
+
+.filterTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d1d5db;
+  margin-bottom: 4px;
+  padding: 0 20px;
+}
+
+.filterTitle span {
+  color: #97ef83;
+  text-shadow: 0 0 12px rgba(151, 239, 131, 0.4);
+}

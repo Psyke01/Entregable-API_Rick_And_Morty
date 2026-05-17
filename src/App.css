@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.containerPage {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 30px;
+  min-height: 80vh;
+  background-color: #111827;
+}
+
+.loadingMessage {
+  font-size: 20px;
+  color: #97ef83;
+  margin: 60px auto;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.errorMessage {
+  font-size: 20px;
+  color: #ff6b6b;
+  margin: 60px auto;
+  text-align: center;
+  display: block;
+  width: 100%;
+}

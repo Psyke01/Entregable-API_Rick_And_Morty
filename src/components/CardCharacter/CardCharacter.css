@@ -1,0 +1,136 @@
+.card {
+  width: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #1f2937, #111827);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagen */
+.cardImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.08);
+}
+
+/* Gradiente sobre la imagen */
+.cardGradientOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 40%,
+    rgba(17, 24, 39, 0.85) 100%
+  );
+  pointer-events: none;
+}
+
+/* Badge de estado flotando sobre la imagen */
+.cardStatusBadge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px 10px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  backdrop-filter: blur(6px);
+}
+
+.cardStatusBadge.alive {
+  background: rgba(151, 239, 131, 0.2);
+  color: #97ef83;
+  border: 1px solid rgba(151, 239, 131, 0.4);
+}
+
+.cardStatusBadge.dead {
+  background: rgba(255, 107, 107, 0.2);
+  color: #ff6b6b;
+  border: 1px solid rgba(255, 107, 107, 0.4);
+}
+
+.cardStatusBadge.unknown {
+  background: rgba(156, 163, 175, 0.2);
+  color: #9ca3af;
+  border: 1px solid rgba(156, 163, 175, 0.3);
+}
+
+/* Contenido inferior */
+.cardContent {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: linear-gradient(160deg, #1f2937, #111827);
+}
+
+.cardName {
+  font-size: 15px;
+  font-weight: 800;
+  color: #f9fafb;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.3px;
+}
+
+.cardInfo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cardInfoItem {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardInfoDot {
+  color: #374151;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* Línea de acento en hover */
+.card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #97ef83, #6ee7f7, #c084fc);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.card:hover::after {
+  opacity: 1;
+}

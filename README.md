@@ -1,20 +1,54 @@
-<<<<<<< HEAD
-# React + Vite
+# Multiverso Rick y Morty
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada en React que consume la API pública de Rick and Morty.
+Permite explorar personajes, filtrar por especie y buscar por nombre.
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19
+- Vite
+- React Router DOM v7
+- CSS vanilla
 
-## React Compiler
+## Requisitos previos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Antes de ejecutar el proyecto asegúrate de tener instalado:
 
-## Expanding the ESLint configuration
+- [Node.js](https://nodejs.org/) versión 18 o superior
+- npm
+- Git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Entregable-API_Rick_And_Morty
->>>>>>> 82ee604c33d2ae3fd8fdd962795e2325e628e69b
+
+## Instalación y ejecución
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+```
+
+> Reemplaza `TU_USUARIO` y `TU_REPOSITORIO` con tu usuario y nombre real del repositorio en GitHub.
+
+### 2. Entrar a la carpeta del proyecto
+
+```bash
+cd TU_REPOSITORIO
+```
+
+### 3. Instalar las dependencias
+
+```bash
+npm install
+```
+
+> Este comando descarga todas las librerías necesarias. Puede tardar unos segundos.
+
+### 4. Iniciar el servidor de desarrollo
+
+```bash
+npm run dev
+```
+
+### 5. Abrir en el navegador
+
+Una vez ejecutado el comando anterior, la terminal mostrará algo como:

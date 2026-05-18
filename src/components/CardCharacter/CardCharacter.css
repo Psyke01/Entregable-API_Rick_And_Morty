@@ -14,7 +14,7 @@
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
 }
 
-/* Imagen */
+
 .cardImageWrapper {
   position: relative;
   width: 100%;
@@ -34,7 +34,7 @@
   transform: scale(1.08);
 }
 
-/* Gradiente sobre la imagen */
+
 .cardGradientOverlay {
   position: absolute;
   inset: 0;
@@ -46,7 +46,7 @@
   pointer-events: none;
 }
 
-/* Badge de estado flotando sobre la imagen */
+
 .cardStatusBadge {
   position: absolute;
   top: 10px;
@@ -78,7 +78,7 @@
   border: 1px solid rgba(156, 163, 175, 0.3);
 }
 
-/* Contenido inferior */
+
 .cardContent {
   padding: 14px 16px 16px;
   display: flex;
@@ -118,7 +118,7 @@
   flex-shrink: 0;
 }
 
-/* Línea de acento en hover */
+
 .card::after {
   content: '';
   position: absolute;

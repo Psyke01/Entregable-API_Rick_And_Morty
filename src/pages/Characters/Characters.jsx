@@ -40,7 +40,7 @@ const Characters = () => {
     fetchAll()
   }, [])
 
-  // Filtrado por nombre en el cliente
+  
   const filtered = allCharacters.filter(character =>
     character.name.toLowerCase().includes(searchTerm.toLowerCase())
   )

@@ -37,7 +37,7 @@ const FilterBySpecies = () => {
           character => character.species.toLowerCase() === species.toLowerCase()
         )
 
-        // Solo actualizar estado si el componente sigue montado
+        
         if (!cancelled) {
           setFiltered(result)
           setError(null)

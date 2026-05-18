@@ -41,7 +41,7 @@ nav {
   box-shadow: 0 4px 12px rgba(151, 239, 131, 0.4);
 }
 
-/* Dropdown */
+
 .dropdownContainer {
   position: relative;
   cursor: pointer;
@@ -116,7 +116,7 @@ nav {
   color: #111827;
 }
 
-/* Buscador */
+
 .searchItem {
   margin-left: 12px;
 }
@@ -167,7 +167,7 @@ nav {
   box-shadow: 0 4px 14px rgba(151, 239, 131, 0.45);
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .navList {
     gap: 4px;
